@@ -50,6 +50,7 @@ main {
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
+  color: var(--dark-blue);
 }
 
 .summary__paragrafo {
@@ -74,20 +75,22 @@ main {
   gap: 1.2rem;
 }
 
-/* .musica__imagem {} */
+.musica__imagem {
+  width: 48px;
+  height: 48px;
+}
 
 .musica__preco {
   display: flex;
   flex-direction: column;
+  font-weight: 800;
+  color: var(--dark-blue);
 }
 
-/*
-  --pale-blue: hsl(225, 100%, 94%);
-  --bright-blue: hsl(245, 75%, 52%);
-  --very-pale-blue: hsl(225, 100%, 98%);
-  --desaturated-blue: hsl(224, 23%, 55%);
-  --dark-blue: hsl(223, 47%, 23%);
-*/
+.musica__preco span {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
 
 .plan__botao {
   border: 0;
@@ -105,10 +108,6 @@ main {
   border: 0;
   border-radius: .5rem;
   cursor: pointer;
-}
-
-.summary__botao:hover {
-  filter: brightness(75%);
 }
 
 .summary__botao--proceed {
