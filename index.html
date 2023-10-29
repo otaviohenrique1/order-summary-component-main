@@ -15,26 +15,24 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-  <main>
-    <img src="images/illustration-hero.svg" alt="illustration hero" class="illustration-hero">
-    <section class="summary">
-      <h1 class="summary__titulo">Order Summary</h1>
-      <p class="summary__paragrafo">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-
-      <div class="summary__plan">
-        <div class="plan__musica">
-          <img src="images/icon-music.svg" alt="musica__imagem">
-          <div class="musica__preco">
+<body class="display-flex justify-content-center">
+  <main class="width-100">
+    <img src="images/illustration-hero.svg" alt="illustration hero" class="illustration-hero width-100">
+    <section class="summary display-flex flex-direction-column align-items-center">
+      <h1 class="summary__titulo text-align-center">Order Summary</h1>
+      <p class="summary__paragrafo text-align-center font-weight-500">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <div class="summary__plan display-flex flex-direction-row justify-content-space-between">
+        <div class="plan__musica display-flex flex-direction-row">
+          <img src="images/icon-music.svg" alt="musica__imagem" class="musica__imagem">
+          <div class="musica__preco font-weight-500 display-flex flex-direction-column font-weight-800">
             Annual Plan
             <span>$59.99/year</span>
           </div>
         </div>
-        <button class="plan__botao">Change</button>
+        <button class="plan__botao font-weight-700 cursor-pointer border-0">Change</button>
       </div>
-      
-      <button class="summary__botao summary__botao--proceed">Proceed to Payment</button>
-      <button class="summary__botao summary__botao--cancel">Cancel Order</button>
+      <button class="summary__botao summary__botao--proceed cursor-pointer width-100 border-0 font-weight-700">Proceed to Payment</button>
+      <button class="summary__botao summary__botao--cancel cursor-pointer width-100 border-0 font-weight-700">Cancel Order</button>
     </section>
   </main>
   
