@@ -9,6 +9,26 @@
   --dark-blue: hsl(223, 47%, 23%);
 }
 
+body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  /* overflow-x: hidden; */
+  width: 100vw;
+}
+
+main {
+  margin-top: 10%;
+  /* min-width: 370px; */
+  max-width: 450px;
+  background-color: white;
+  height: 700px;
+  border-radius: 30px;
+}
+
 .display-flex {
   display: flex;
 }
@@ -59,26 +79,6 @@
 
 .border-0 {
   border: 0;
-}
-
-body {
-  background-image: url(../images/pattern-background-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--pale-blue);
-  font-size: 16px;
-  font-family: 'Red Hat Display', sans-serif;
-  /* overflow-x: hidden; */
-  width: 100vw;
-}
-
-main {
-  margin-top: 10%;
-  /* min-width: 370px; */
-  max-width: 450px;
-  background-color: white;
-  height: 700px;
-  border-radius: 30px;
 }
 
 .illustration-hero {
